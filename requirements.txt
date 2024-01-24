@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 blinker==1.7.0
 Bootstrap-Flask==2.3.3
 certifi==2023.11.17
