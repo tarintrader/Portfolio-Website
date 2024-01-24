@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% set active_page = 'resume' %}
+
+{% block title %}Adrián Tarín | Resume{% endblock %}
+
+{% block content %}
+
+<object data="static/CV_Adrian_Tarin.pdf" type="application/pdf" width="100%" height="600px">
+    <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="/path/to/your/resume.pdf">click here to download the PDF file.</a></p>
+</object>
+
+{% endblock %}

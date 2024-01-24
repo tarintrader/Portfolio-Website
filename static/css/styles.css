@@ -1,0 +1,94 @@
+.btn-primary {
+    background: linear-gradient(to right, #3498db, #2c3e50) !important;
+    height: 50px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to left, #3498db, #2c3e50) !important;
+}
+
+body {
+    background: #f5f5f7;
+    font-family: 'SFUIText', sans-serif;
+}
+
+.btn-github:hover {
+    color: white; /* Text color */
+    background: linear-gradient(to right, #3498db, #2c3e50) !important; /* Background color */
+ }
+
+.btn-github {
+    color: black; /* Text color on hover */
+    background: linear-gradient(to right, #e8e8ed, #00000029) !important; /* Background color on hover */
+    width: 50px; /* Adjust width of the SVG icon */
+    height: 50px;
+}
+
+.btn-github svg {
+    fill: #FF5900; /* Icon color */
+    width: 24px; /* Adjust width of the SVG icon */
+    height: 24px;
+  }
+
+.btn-github:hover svg {
+    fill: white; /* Icon color on hover */
+}
+
+.btn-linkedin:hover {
+    color: white; /* Text color */
+    background: linear-gradient(to right, #3498db, #2c3e50) !important; /* Background color */
+ }
+
+.btn-linkedin {
+    color: black; /* Text color on hover */
+    background: linear-gradient(to right, #e8e8ed, #00000029) !important; /* Background color on hover */
+}
+
+.btn-linkedin svg {
+    fill: #1f77b4; /* Icon color */
+    width: 24px; /* Adjust width of the SVG icon */
+    height: 24px;
+  }
+
+.btn-linkedin:hover svg {
+    fill: white; /* Icon color on hover */
+}
+
+.text-justify {
+      text-align: justify;
+    }
+
+.icon {
+    margin-right: 10px; /* Adjust the value as needed */
+    pointer-events: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(to right, #e8e8ed, #00000029) !important;
+    border: none;
+}
+
+.icon svg {
+    fill: #0066cc; /* Icon color */
+    width: 16px; /* Adjust width of the SVG icon */
+    height: 16px;
+}
+
+.custom-bg-color {
+    background-color: #00000066;
+}
+
+.form-container {
+    background: linear-gradient(to right, #f5f5f7, #e8e8ed) !important;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.btn-submit {
+    background: linear-gradient(to right, #3498db, #2c3e50) !important;
+    color: white;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(to left, #3498db, #2c3e50) !important;
+    color: white
+}
+

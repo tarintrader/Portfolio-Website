@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% set active_page = 'about' %}
+
+{% block title %}Adrián Tarín | About{% endblock %}
+
+{% block content %}
+  <div class="container px-4 py-5">
+        <!-- Image and text side by side using Bootstrap grid system -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="about-image-container ms-auto" style="max-width: 200px; overflow: hidden; border-radius: 30px;">
+                    <img class="img-fluid rounded" src="static/adrian_ny.png" alt="about image" style="width: 100%;">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="about-text-container px-5">
+                    <h2 class="fw-bold mb-3">Who am I?</h2>
+                    <p>Born in Oviedo, Spain, I've always been fascinated by technology. With a degree in Commerce and Marketing, I took a leap to become a self-taught Software Developer. From ground zero, I discovered a true passion for programming, embodying dedication, versatility, and a commitment to continuous learning in the dynamic world of technology.</p>
+                </div>
+                <div class="about-text-container px-5 mt-5">
+                    <h3 class="fw-bold">Personal Info</h3>
+
+                    <div class="row row-cols-sm-2 g-1 py-2 mt-2">
+                      <div class="col d-flex align-items-start">
+                        <span class="btn btn-secondary icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                              <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                            </svg>
+                      </span>
+                        <div>
+                          <h5 class=" mb-0 fs-6 text-body-emphasis">Phone</h5>
+                          <p class="fw-bold">+353 0899 77 33 08</p>
+                        </div>
+                      </div>
+                      <div class="col d-flex align-items-start">
+                        <span class="btn btn-secondary icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path>
+                            </svg>
+                        </span>
+                        <div>
+                          <h5 class="mb-0 fs-6 text-body-emphasis">Mail</h5>
+                          <p class="fw-bold">adriantarinmartinez@gmail.com</p>
+                        </div>
+                      </div>
+                      <div class="col d-flex align-items-start">
+                        <span class="btn btn-secondary icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
+                                </svg>
+                        </span>
+                        <div>
+                          <h5 class="mb-0 fs-6 text-body-emphasis">Location</h5>
+                          <p class="fw-bold">Sligo, Ireland.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock %}

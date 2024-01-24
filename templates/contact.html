@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% set active_page = 'contact' %}
+
+{% block title %}Adrián Tarín | Contact{% endblock %}
+
+{% block content %}
+
+
+
+
+<div class="p-3 mt-3">
+
+
+    <div class="row align-items-md-stretch justify-content-center">
+      <div class="col-md-4">
+        <div class="h-100 p-5  rounded-3" style="background: #000000cc; color: white">
+          <h2>Contact</h2>
+          <p class ="mb-5 mt-2 fs-4">I´m always open to discussing new projects and opportunities.</p>
+            <div class="row align-items-center">
+                <div class="col-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-phone contact-icon" viewBox="0 0 16 16">
+                  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                </svg>
+            </div>
+                <div class="col-auto">
+                  <h5 class=" mb-0 fs-6">Phone</h5>
+                  <p class="fw-bold">+353 0899 77 33 08</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope contact-icon" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path>
+                            </svg>
+                </div>
+                <div class="col-auto">
+                  <h5 class=" mb-0 fs-6">Mail</h5>
+                  <p class="fw-bold">adriantarinmartinez@gmail.com</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+        <div class="col-md-5">
+            <div class="h-100 px-5 pt-5 form-container border rounded-3">
+                <form method="POST" action="/contact">
+                    {{ form.csrf_token }}
+
+                    <div class="mb-1">
+                        {{ form.name.label }} {{ form.name(size=20, class="form-control") }}
+                    </div>
+
+                    <div class="mb-1">
+                        {{ form.email.label }} {{ form.email(size=20, class="form-control") }}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form.message.label }} {{ form.message(cols=30, rows=4, class="form-control") }}
+                    </div>
+
+                    <div class="text-center">
+                        <input type="submit" value="Submit" class="btn btn-submit mx-auto">
+                    </div>
+                </form>
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                  {% if messages %}
+                    <div class="container mt-3">
+                      {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                          {{ message }}
+                        </div>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                {% endwith %}
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
