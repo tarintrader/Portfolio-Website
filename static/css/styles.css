@@ -92,3 +92,26 @@ body {
     color: white
 }
 
+.navbar {
+  padding: 5px 10px; /* Adjust the padding as needed */
+}
+
+.navbar-toggler {
+  padding: 5px 10px; /* Adjust the padding as needed */
+}
+
+.nav-link {
+  font-size: 14px; /* Adjust the font size as needed */
+  padding: 5px 10px; /* Adjust the padding as needed */
+}
+
+.offcanvas-body {
+  padding: 10px; /* Adjust the padding as needed */
+}
+
+footer {
+    background-color: transparent;
+    padding: 10px;
+    font-size: 12px;
+}
+
