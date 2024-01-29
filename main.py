@@ -54,7 +54,7 @@ def contact():
             sender_email = form.email.data
             message_body = f"Name: {form.name.data}\nEmail: {sender_email}\nMessage: {form.message.data}"
 
-            msg = Message(subject, recipients=['adriantarinmartinez@gmail.com'], sender=sender_email)
+            msg = Message(subject, recipients=['tarintrader@gmail.com'], sender=sender_email)
             msg.body = message_body
             mail.send(msg)
 
