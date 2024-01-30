@@ -111,14 +111,13 @@ body {
 
 footer {
     background-color: transparent;
-    padding: 10px;
     font-size: 12px;
     text-align: center;
 }
 
 .flex-wrapper {
   display: flex;
-  min-height: 100vh;
+  min-height: 90vh;
   flex-direction: column;
   justify-content: space-between;
 }
